@@ -3,6 +3,8 @@
 #include <fstream>
 using namespace std;
 
+#include "solutii.h"
+
 
 
 // 1
@@ -1416,53 +1418,89 @@ using namespace std;
 
 // VARIANTA 28
 
-void citireFisier(int[], int&);
-void afisareNumereAproapePrime(int[], int);
-int prim(int);
+//void citireFisier(int[], int&);
+//void numereAproapePrime(int[], int);
+//int aproapePrim(int);
+//int prim(int);
+//
+//int main() {
+//
+//	int v[100], d;
+//
+//	citireFisier(v, d);
+//	numereAproapePrime(v, d);
+//
+//}
+//
+//
+//
+//void citireFisier(int v[], int& d) {
+//
+//	ifstream read("numere.txt");
+//
+//	d = 0;
+//
+//	while (!read.eof()) {
+//		read >> v[d];
+//		d++;
+//	}
+//}
+//
+//int prim(int n) {
+//
+//	if (n < 2) {
+//		return 0;
+//	}
+//	for (int i = 2; i * i <= n; i++) {
+//		if (n % i == 0) {
+//			return 0;
+//		}
+//	}
+//
+//	return 1;
+//}
+//
+//
+//
+//int aproapePrim(int n) {
+//
+//	int cat;
+//
+//	for (int i = 2; i <= n; i++) {
+//
+//		if (prim(i)&&n%i==0&&prim(n/i)) {
+//
+//			
+//			return 1;
+//
+//		}
+//
+//	}
+//	return 0;
+//}
+//
+//void numereAproapePrime(int v[], int d) {
+//
+//	int maxAproapePrim = -1;
+//
+//	for (int i = 0; i < d; i++) {
+//
+//		if (aproapePrim(v[i])) {
+//			if (v[i] > maxAproapePrim) {
+//				maxAproapePrim = v[i];
+//			}
+//		}	
+//	}
+//	if (maxAproapePrim != -1) {
+//		cout << "DA " << maxAproapePrim << endl;
+//	}
+//	else {
+//		cout << "NU " << endl;
+//	}
+//}
+
 
 int main() {
 
-	int v[100], d;
-
-	citireFisier(v, d);
-	afisareNumereAproapePrime(v, d);
-
-}
-
-
-
-void citireFisier(int v[], int& d) {
-
-	ifstream read("numere.txt");
-
-	d = 0;
-
-	while (read >> v[d]) {
-		d++;
-	}
-
-}
-
-void prim(int n) {
-
-	if (i <= 2) {
-		return false;
-	}
-	for (int i = 2; i * i <= n; i++) {
-		if (n % i != 0) {
-			return false;
-		}
-	}
-
-	return true;
-}
-
-void afisareNumereAproapePrime(int v[], int d) {
-
-	for (int i = 0; i < d; i++) {
-
-
-
-	}
-
+	sol37();
 }
